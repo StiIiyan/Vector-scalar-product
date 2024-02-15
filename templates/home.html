@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector scalar product</title>
+    <script>
+        function validateForm() {
+            var vsize = document.getElementById("vsize").value;
+            if (vsize < 0) {
+                alert("Vector size must be non-negative.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form method="POST" action="" onsubmit="return validateForm()">
+        <h4 for="vsize">What size should the randomly generated vectors be?</h4>
+        <input type="number" id="vsize" name="VectorSize" min="0"><br><br>
+        <button type="submit">Submit vector size</button><br>
+    </form>
+</body>
+</html>
